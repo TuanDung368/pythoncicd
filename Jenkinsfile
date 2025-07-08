@@ -3,10 +3,10 @@ pipeline {
 
     environment {
         // Thay đổi các biến này cho phù hợp với repo và Docker Hub của bạn
-        GITHUB_REPO_URL = 'https://github.com/TuanDung368/flask-docker-app.git' // Thay đổi thành repo của bạn
+        GITHUB_REPO_URL = 'https://github.com/TuanDung368/pythoncicd.git' // Thay đổi thành repo của bạn
         GITHUB_BRANCH   = 'main' // Nhánh chính của bạn
 
-        DOCKER_IMAGE_NAME = 'your-dockerhub-username/flask-docker-app' // Thay đổi thành username Docker Hub của bạn
+        DOCKER_IMAGE_NAME = 'your-dockerhub-username/pythoncicd' // Thay đổi thành username Docker Hub của bạn
         DOCKER_IMAGE_TAG  = "${env.BUILD_NUMBER}" // Sử dụng số build của Jenkins làm tag
         DOCKER_CREDENTIAL_ID = 'your-dockerhub-credential-id' // ID của credential Docker Hub trong Jenkins
     }
